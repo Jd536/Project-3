@@ -1,0 +1,179 @@
+body{
+  width: 100vw;
+  min-width: 320px;
+box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  background-color:#061c2a;
+  height: 3em;
+  margin: 0;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.callout{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+}
+.callout>h2{
+
+}
+.callout >p{
+  color: #b6c3cc;
+
+}
+
+#hr1{
+ width: 100%;
+ margin:0.3em auto;
+ height:4px;
+ color: black;
+ border: 0 none;
+background-color: #000000;
+}
+
+#hr2{
+  width: 100%;
+  margin:0 auto;
+  border: 0 none;
+  height: 1px;
+ background-color: #000000;
+}
+#hr3{
+  width: 100%;
+  margin:1em auto;
+  border: 0 none;
+  height: 1px;
+ background-color: #000000;
+}
+form{
+  margin: 2em auto;
+  width: 90%;
+  background-color: #fff;
+  color: #a09fa0;
+
+}
+form h2{
+  color: #000;
+}
+
+
+.contactinfo{
+  width: 90%;
+  margin:auto;
+
+}
+.contact-input{
+  text-align: right;
+}
+.contact-input, #states {
+  background-color:#dbdbdb;
+  border: none;
+  border-radius:4px;
+  width: 100%;
+  margin:.6em 0;
+  color: #b8b7b8;
+  padding:.7em .2em;
+
+
+}
+/* .newsletter-container {
+  display:flex;
+  flex-direction: column;
+} */
+
+.newsletter-container textarea{
+  width: 100%;
+  padding: 0;
+  margin-top: 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #dbdbdb;
+}
+.newsletter-container .button{
+  width: 100%;
+  height: 3em;
+  margin-top: 1em;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #12c7b1;
+  color:#fff;
+  font-size: 1.5em;
+}
+
+ [type="checkbox"], [type="radio"]{
+  margin-right: 1em;
+}
+
+input:focus{
+  border: 1px solid #242e3a;
+  color:#000;
+}
+
+footer{
+  text-align: center;
+  color: #b8b7b8;
+}
+/* 768 screen*/
+
+@media only screen and (min-width:768px){
+.container-main, .contactinfo, #hr1, #hr2, #hr3{
+  max-width:1024px;
+  margin: auto;
+}
+form {
+  width: 100%;
+  margin: 0;
+}
+.formtabs{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin:0;
+  align-items: center;
+}
+.formtabs input{
+  width: 80%;
+  margin-left: 3em;
+}
+.formtabs label{
+  width: 20%;
+
+}
+#states{
+  width: 80%;
+  margin-left: 3em;
+}
+#hr3{
+  margin-top:1em;
+}
+.checkboxes, .radio{
+background-color: red;
+display: block;
+text-align:left;
+}
+.newsletter-container input{
+  margin 1.5em;
+
+
+}
+.newsletter-br{
+margin: 1em 0;
+}
+.newsletter-container textarea{
+  margin: 1em 0;
+}
+}
