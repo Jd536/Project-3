@@ -77,12 +77,11 @@ form legend{
   margin-bottom: 1em;
 }
 
-
-.contactinfo{
-  width: 90%;
-  margin:auto;
-
+fieldset{
+  border: none;
 }
+
+
 .contact-input{
   text-align: right;
 }
@@ -95,7 +94,13 @@ form legend{
   color: #b8b7b8;
   padding:.7em .2em;
 }
-
+#zipcode-wrapper{
+  display: flex;
+  flex-direction:column;
+}
+#zip-code{
+  width: 25%;
+}
 .newsletter-container{
   padding: 1em 0;
   background-color:#eaf9ff;
@@ -177,6 +182,11 @@ form {
   width: 20%;
 
 }
+#zipcode-wrapper{
+  display: flex;
+  flex-direction:row;
+}
+
 #states{
   width: 80%;
   margin-left: 3em;

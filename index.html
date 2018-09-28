@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-
+  </head>
   <body>
 
     <header>
@@ -22,77 +22,78 @@
       <hr id="hr1"> <!--might have to add border bottom instead of hr-->
       <hr id="hr2">
     </div>
-    <div class="contactinfo">
-      <legend> Contact Information</legend>
-    </div>
+
   <div class="container-main">
-    <form class="from" action="index.html" method="post">
-      <div class="formtabs ">
-          <label for="fullname">Full Name</label>
-           <input type="text" id="fullname" name="fullname"  value="" class="contact-input" required placeholder="required">
-      </div>
-      <div class="formtabs">
-           <label for="email">Email address</label>
-           <input type="email" id="email" name="email" value="" class="contact-input" required placeholder="required">
-      </div>
-     <div class="formtabs">
-           <label for="phone">Telephone</label>
-           <input type="tel" name="phone" id="phone" class="contact-input" value="">
-     </div>
-       <div class="formtabs">
-           <label for="street-address">Street address</label>
-           <input type="text" name="streetaddress" class="contact-input" id="street-address" >
-     </div>
-     <div class="formtabs">
-           <label for="city">City</label>
-           <input type="text" name="city" class="contact-input" id="city" value="">
-     </div>
-     <div class="formtabs selectarrow">
-       <label for="states">State</label>
-       <select class="state " id="states" name="states" >
-            <option name="states" value="" hidden> Choose State</option>
-            <option name="states" value="">AL</option>
-            <option name="states" value="">CA</option>
-            <option name="states" value="">MI</option>
-            <option name="states" value="">FL</option>
-            <option name="states" value="">TX</option>
-            <option name="states" value="">AZ</option>
-            <option name="states" value="">WA</option>
-            <option name="states" value=""> NC</option>
-            <option name="states" value="">SC</option>
-            <option name="states" value="">ID</option>
-            <option name="states" value="">GA</option>
-            <option name="states" value="">LA</option>
+        <form class="from" action="index.html" method="post">
+              <fieldset>
+                 <legend> Contact Information</legend>
 
-      </select>
-    </div>
-    <div class="formtabs">
-        <label for="zip-code"> Zipcode</label>
-      <input type="text" name="zipcode" id="zip-code" class="contact-input">
+                 <div class="formtabs ">
+                      <label for="fullname">Full Name</label>
+                       <input type="text" id="fullname" name="fullname"  value="" class="contact-input" required placeholder="required">
+                 </div>
+                 <div class="formtabs">
+                       <label for="email">Email address</label>
+                       <input type="email" id="email" name="email" value="" class="contact-input" required placeholder="required">
+                 </div>
+                 <div class="formtabs">
+                       <label for="phone">Telephone</label>
+                       <input type="tel" name="phone" id="phone" class="contact-input" value="" placeholder="(000)000-0000">
+                 </div>
+                   <div class="formtabs">
+                       <label for="street-address">Street address</label>
+                       <input type="text" name="streetaddress" class="contact-input" id="street-address" placeholder="Please type your address here" >
+                 </div>
+                 <div class="formtabs">
+                       <label for="city">City</label>
+                       <input type="text" name="city" class="contact-input" id="city" value="">
+                 </div>
+                 <div class="formtabs selectarrow">
+                   <label for="states">State</label>
+                   <select class="state " id="states" name="states" >
+                        <option name="states"  hidden> Choose State</option>
+                        <option name="states" >AL</option>
+                        <option name="states" >CA</option>
+                        <option name="states" >MI</option>
+                        <option name="states" >FL</option>
+                        <option name="states" >TX</option>
+                        <option name="states" >AZ</option>
+                        <option name="states" >WA</option>
+                        <option name="states" > NC</option>
+                        <option name="states" >SC</option>
+                        <option name="states" >ID</option>
+                        <option name="states" >GA</option>
+                        <option name="states" >LA</option>
 
-      </div>
+                  </select>
+                </div>
+                <div class="formtabs " id="zipcode-wrapper">
+                    <label for="zip-code"> Zipcode</label>
+                  <input type="text" name="zipcode" id="zip-code" class="contact-input">
 
-        <hr id="hr3"> <br>
-    <div class="newsletter-container">
+                </div>
+            </fieldset>
+                <hr id="hr3"> <br>
+                <div class="newsletter-container">
+           <fieldset>
+                <legend >Newsletter</legend>
 
-        <legend >Newsletter</legend>
+                <label  class="newsletter-label" for="newsletter">Select the newsletters you would like to receive</label>  <br class="newsletter-br">
+                <input  name="newsletter" type="checkbox"  id="html" value="HTML News"> HTML News <br class="newsletter-br">
+                <input  name="newsletter" type="checkbox"  id="css" value="CSS">CSS News <br class="newsletter-br">
+                <input  name="newsletter" type="checkbox"  id="js" value="javascripst">Javascript News <br class="newsletter-br">
 
-        <label  class="newsletter-label" for="newsletter">Select the newsletters you would like to receive</label>  <br class="newsletter-br">
-        <input  name="newsletter" type="checkbox"  id="html" value="HTML News"> HTML News <br class="newsletter-br">
-        <input  name="newsletter" type="checkbox"  id="css" value="CSS">CSS News <br class="newsletter-br">
-        <input  name="newsletter" type="checkbox"  id="js" value="javascripst">Javascript News <br class="newsletter-br">
-
-        <label  class="newsletter-label" for="newsletter-formart"> Newsletter Format</label> <br class="newsletter-br">
-        <input type="radio" name="newsletter-formart" value="html"> HTML <br class="newsletter-br">
-        <input type="radio" name="newsletter-formart" value="Plain text">Plain Text <br class="newsletter-br">
+                <label  class="newsletter-label" for="newsletter-formart"> Newsletter Format</label> <br class="newsletter-br">
+                <input type="radio" name="newsletter-formart" value="html"> HTML <br class="newsletter-br">
+                <input type="radio" name="newsletter-formart" value="Plain text">Plain Text <br class="newsletter-br">
 
 
-          <label  class="newsletter-label" for="text">Other topics you'd like to hear about</label> <br class="newsletter-br">
-          <textarea id="text" name="name" rows="8" cols="80"></textarea>
-          <input class="button" type="submit" name="Signup" value="Sign Up">
-
-      </div>
-    </form>
+                <label  class="newsletter-label" for="text">Other topics you'd like to hear about</label> <br class="newsletter-br">
+                <textarea id="text" name="name" rows="8" cols="80"></textarea>
+                <input class="button" type="submit" name="Signup" value="Sign Up">
+          </fieldset>
+              </div>
+        </form>
   </div>
     <footer>
       <p>copyright The Code Review</p>
