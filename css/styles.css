@@ -2,6 +2,12 @@ body{
   width: 100vw;
   min-width: 320px;
 box-sizing: border-box;
+font-family: 'Merriweather', serif;
+}
+input:hover, #states:hover{
+  transform:scale(1.01);
+  background-color: #fffef3;
+  transition: .5s;
 }
 
 header{
@@ -26,19 +32,15 @@ header h1 {
   text-align: center;
 
 }
-.callout>h2{
 
-}
 .callout >p{
   color: #b6c3cc;
-
 }
 
 #hr1{
  width: 100%;
  margin:0.3em auto;
  height:4px;
- color: black;
  border: 0 none;
 background-color: #000000;
 }
@@ -46,9 +48,11 @@ background-color: #000000;
 #hr2{
   width: 100%;
   margin:0 auto;
+  margin-bottom: 2em;
   border: 0 none;
   height: 1px;
  background-color: #000000;
+
 }
 #hr3{
   width: 100%;
@@ -57,6 +61,9 @@ background-color: #000000;
   height: 1px;
  background-color: #000000;
 }
+.wrapper-main{
+  width:100vw;
+}
 form{
   margin: 2em auto;
   width: 90%;
@@ -64,8 +71,10 @@ form{
   color: #a09fa0;
 
 }
-form h2{
+form legend{
   color: #000;
+  margin-top:0;
+  margin-bottom: 1em;
 }
 
 
@@ -85,14 +94,23 @@ form h2{
   margin:.6em 0;
   color: #b8b7b8;
   padding:.7em .2em;
-
-
 }
-/* .newsletter-container {
-  display:flex;
-  flex-direction: column;
-} */
 
+.newsletter-container{
+  padding: 1em 0;
+  background-color:#eaf9ff;
+}
+.newsletter-container:hover{
+
+    background-color: #fff;
+  background-color:#cdf2ff;
+  transition: 0.5s;
+}
+
+.newsletter-container:hover #text{
+  background-color:#f7f7f7;
+  transition: 0.5s;
+}
 .newsletter-container textarea{
   width: 100%;
   padding: 0;
@@ -123,6 +141,12 @@ input:focus{
   color:#000;
 }
 
+.newsletter-br{
+margin: 1em 0;
+}
+.newsletter-container textarea{
+  margin: 1em 0;
+}
 footer{
   text-align: center;
   color: #b8b7b8;
@@ -132,7 +156,7 @@ footer{
 @media only screen and (min-width:768px){
 .container-main, .contactinfo, #hr1, #hr2, #hr3{
   max-width:1024px;
-  margin: auto;
+  margin:1em auto;
 }
 form {
   width: 100%;
@@ -165,11 +189,7 @@ background-color: red;
 display: block;
 text-align:left;
 }
-.newsletter-container input{
-  margin 1.5em;
 
-
-}
 .newsletter-br{
 margin: 1em 0;
 }
