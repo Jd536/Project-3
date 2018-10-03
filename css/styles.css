@@ -102,6 +102,11 @@ fieldset{
   width: 25%;
   margin-left: 2.3em;
 }
+#radios, #checkboxes{
+  font-weight: normal;
+  font-size: 1em;
+
+}
 .newsletter-container{
   padding: 1em 0;
   background-color:#eaf9ff;
@@ -195,11 +200,7 @@ form {
 #hr3{
   margin-top:1em;
 }
-.checkboxes, .radio{
-background-color: red;
-display: block;
-text-align:left;
-}
+
 
 .newsletter-br{
 margin: 1em 0;

@@ -79,18 +79,18 @@
            <fieldset>
                 <legend >Newsletter</legend>
 
-                <label  class="newsletter-label" for="html">Select the newsletters you would like to receive</label>  <br class="newsletter-br">
-                <input  name="newsletter" type="checkbox"  id="html" value="HTML News"> HTML News <br class="newsletter-br">
-                <input  name="newsletter" type="checkbox"  id="css" value="CSS">CSS News <br class="newsletter-br">
-                <input  name="newsletter" type="checkbox"  id="js" value="javascripst">Javascript News <br class="newsletter-br">
+                <h3 id="checkboxes">Select the newsletters you would like to receive</h3>
+                <input  name="newsletter" type="checkbox"  id="html" value="HTML News"> <label for="html"> HTML News</label> <br class="newsletter-br">
+                <input  name="newsletter" type="checkbox"  id="css" value="CSS"> <label for="css">CSS News </label><br class="newsletter-br">
+                <input  name="newsletter" type="checkbox"  id="js" value="javascripst"> <label for="js">Javascript News</label> <br class="newsletter-br">
 
-                <label  class="newsletter-label" for="plaintext"> Newsletter Format</label> <br class="newsletter-br">
-                <input type="radio" name="newsletter-formart" id="htmlnewletter" value="html"> HTML <br class="newsletter-br">
-                <input type="radio" name="newsletter-formart" id="plaintext" value="Plain text">Plain Text <br class="newsletter-br">
-
+                <h3 id="radios"> Newsletter Format</h3>
+                <input type="radio" name="newsletter-formart" id="htmlnewletter" value="html"><label for="htmlnewletter">HTML</label><br class="newsletter-br">
+                <input type="radio" name="newsletter-formart" id="plaintext" value="Plain text"><label for="plaintext">Plain Text </label><br class="newsletter-br">
 
                 <label  class="newsletter-label" for="text">Other topics you'd like to hear about</label> <br class="newsletter-br">
                 <textarea id="text" name="name" rows="8" cols="80"></textarea>
+                <label for="button" id="buttonlable-hide"></label>
                 <input class="button" type="submit" name="Signup" value="Sign Up" id="button">
           </fieldset>
               </div>
